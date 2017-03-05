@@ -8,7 +8,7 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,14 +16,15 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/basic.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
-    <script src="studentController.js"></script>
+
 
      <!--progress bar style-->
     <style>
@@ -89,32 +90,28 @@
 </head>
 
 <body>
-        <h2>Tyler Wilson</h2>
-        <a id="LinkButton" href="/student/engageteam" class= "btn btn-default" >Assign</a>
+    <div style="background-color:#981e32;color:white;text-align:center;" >
+        <br>
+        <h1>Tyler Wilson</h1>
+        <br>
+	</div>
+<div class="col-md-1">
 
-<div class="container">
-    <br>
-    <p align=center>Progress Bar</p>
- <div class="progress">
-  <div id="one" class="progress-bar" role="progressbar" style="width:17%">
+</div>
+<div class="col-md-10">
 
-  </div>
-  <div id="two" class="progress-bar" role="progressbar" style="width:16%">
-
-  </div>
-   <div id="three" class="progress-bar" role="progressbar" style="width:17%">
-
-  </div>
-    <div id="four" class="progress-bar progress-bar-success" role="progressbar" style="width:17%">
-  </div>
-  <div id="five" class="progress-bar progress-bar-warning" role="progressbar" style="width:16%">
-
-  </div>
-  <div id="six" class="progress-bar progress-bar-danger" role="progressbar" style="width:17%">
-
+<div>
+    <h3 align=center>Progress Bar</h3>
+ <div class="row">
+    <div class="col-md-12">
+    <div class="progress">
+    <div id="one" class="progress-bar" role="progressbar" style="width:65%">
+    </div>
+    </div>
   </div>
  </div>65%
 </div>
+    <div>
         <br><br>
         <button class="accordion">Steps</button>
         <div class="panel">
@@ -129,7 +126,7 @@
           </form>
           </p>
         </div>
-
+</div>
         <button class="accordion">About</button>
         <div class="panel">
             <br>
@@ -144,7 +141,7 @@
                     <td>tylerw96@gmail.com</td>
                 </tr>
                 <tr>
-                    <td>Graduation:</td>
+                    <td>Graduation:&nbsp&nbsp&nbsp&nbsp&nbsp</td>
                     <td>2018</td>
                 </tr>
                 <tr>
@@ -161,25 +158,27 @@
           <p>
             <table class = "accordianT">
                 <tr>
-                    <td>02/20/2017</td>
-                    <td>email</td>
+                    <td>02/20/2017&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                    <td>email&nbsp&nbsp&nbsp&nbsp&nbsp</td>
                     <td>discussed major. Sugg campus visit.</td>
                 </tr>
                 <tr>
-                    <td>12/02/2016</td>
+                    <td>12/02/2016&nbsp&nbsp&nbsp&nbsp&nbsp</td>
                     <td>call</td>
                     <td>Checked in. Scheduled follow-up contact</td>
                 </tr>
                 <tr>
-                    <td>10/15/2016</td>
+                    <td>10/15/2016&nbsp&nbsp&nbsp&nbsp&nbsp</td>
                     <td>call</td>
                     <td>Introduction.  Good interest.</td>
                 </tr>
             </table>
             </p>
         </div>
-        <br>
-        <a id="LinkButton" href="/student/update" class="btn btn-default" >Action</a>
+        <a id="LinkButton" href="/student/update" class="btn btn-default" >New Interaction</a>
+        <a id="LinkButton" href="/student/engageteam" class= "btn btn-default" >Assign</a>
+</div><!--ending of col for body-->
+<div class="col-md-1"></div>
         <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
