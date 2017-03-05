@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form>
+      <div class="form-group">
+        <label for="contact">First name</label>
+        <div>
+          <input type="text" name="first-name" class="form-control" placeholder="Jane">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Last name</label>
+        <div>
+          <input type="text" name="last-name" class="form-control" placeholder="Doe">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Phone number</label>
+        <div>
+          <input type="text" name="phone-number" class="form-control" placeholder="(***) ***-****">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Email</label>
+        <div>
+         <input type="text" name="email" class="form-control" placeholder="amazing_student@email.com">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="grad-year">Academic Year</label>
+          <div>
+            <select class="btn btn-default dropdown-toggle" name="grad-year" required>
+              <option></option>
+              <option>2017</option>
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+              <option>2021</option>
+            </select>
+          </div>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Area of Study</label>
+        <div>
+          <input type="text" name="study" class="form-control" placeholder="ie. Business">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Focus Area</label>
+        <div>
+          <input type="text" name="Focus" class="form-control" placeholder="ie. Information Systems">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Notes:</label>
+        <textarea class="form-control" rows="5" id="notes" required></textarea>
+      </div>
+      <div>
+        <input type="date" name="date" class="btn btn-default" required>
+        <input type="submit" value="Submit" class="btn btn-default">
+        <input type="reset" class="btn btn-default">
+        <a href="/student" class="btn btn-default">
+          Cancel
+        </a>
+      </div>
+    </form>
+
+{% endblock %}

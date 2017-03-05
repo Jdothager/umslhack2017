@@ -1,0 +1,26 @@
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+	text-align:center;
+}
+.navFont{
+font-size:12px;
+font-type:Arial;
+font-weight:bold;
+}
+.border{
+border: 5px solid red;
+}
+#page2{
+display:none;
+}
+.navRow{
+text-align:center;
+font-size:22px;
+}
+

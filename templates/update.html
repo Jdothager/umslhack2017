@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form>
+      <div class="form-group">
+        <label for="contact">How did you speak with this person?</label>
+        <div>
+        <select class="btn btn-default dropdown-toggle" name="contact" required>
+          <option></option>
+          <option value="phone">Phone Call</option>
+          <option value="text">Text Message</option>
+          <option value="email">Email</option>
+          <option value="inperson">In Person</option>
+          <option value="update">No Contact - Status Update</option>
+        </select>
+        </div>
+      </div>
+      
+      <label >Update Status:</label>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="" name="interest">
+          Expressed Interest
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="" name="visit">
+          Campus Visit
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="" name="applied">
+          Applied
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="" name="accepted">
+          Accepted
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="" name="enrolled">
+          Enrolled
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Notes:</label>
+        <textarea class="form-control" rows="5" id="notes" required></textarea>
+      </div>
+      <div>
+        <input type="date" name="date" class="btn btn-default" required>
+        <input type="submit" value="Submit" class="btn btn-default">
+        <input type="reset" class="btn btn-default">
+        <a href="/student" class="btn btn-default">
+          Cancel
+        </a>
+      </div>
+    </form>
+
+{% endblock %}
