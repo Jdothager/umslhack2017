@@ -6,9 +6,10 @@
     margin: 0 auto;">
     <div style="background-color:#981e32;color:white;text-align:center;" >
         <br>
-        <h1>Tyler Wilson</h1>
+        <h1></h1>
         <br>
 	</div>
+  <br>
 
     <form>
       <div class="form-group">
@@ -68,17 +69,26 @@
       </div>
 
       <div class="form-group">
+        <label for="hear">How did you hear about us?</label>
+        <div>
+          <input type="text" name="hear" class="form-control" placeholder="ie. College Fair">
+        </div>
+      </div>
+
+      <div class="form-group">
         <label for="notes">Notes:</label>
-        <textarea class="form-control" rows="5" id="notes" required></textarea>
+        <textarea class="form-control" rows="5" id="notes"></textarea>
       </div>
       <div>
-        <input type="date" name="date" class="btn btn-default" required>
-        <input type="submit" value="Submit" class="btn btn-default">
-        <input type="reset" class="btn btn-default">
-        <a href="/student" class="btn btn-default">
+        <input type="date" name="date" class="btn btn-default">
+        <a href="/" class="btn btn-warning btn-lg">Submit</a>
+        <input type="reset" class="btn btn-warning btn-lg">
+        <a href="/" class="btn btn-warning btn-lg">
           Cancel
         </a>
       </div>
     </form>
+    <br><br>
+
 
 {% endblock %}
